@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import UserList from "./UserLIst";
+import UserList from "./UserList";
 
 type User = {
   id: number;
