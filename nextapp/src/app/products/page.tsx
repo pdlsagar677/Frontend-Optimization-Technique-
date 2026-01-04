@@ -9,7 +9,7 @@ type Product = {
 
 async function getProducts(): Promise<Product[]> {
   const res = await fetch("https://fakestoreapi.com/products", {
-    next: { revalidate: 120 }, // cache + refresh every 2 min
+    next: { revalidate: 30 }, 
   });
 
   return res.json();
